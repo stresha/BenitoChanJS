@@ -1,0 +1,357 @@
+.body {
+    background-image:  url(../multimedia/footer/fondo3.jpg);
+    animation: snow 40s linear infinite; 
+    }
+
+    @keyframes snow {
+        0% {background-position: 0px 0px;}
+    100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+      } 
+
+.portada {
+    background-image: url(../multimedia/footer/yellow.jpg);
+    background-size: contain;
+    border-radius: 80px;
+    font-family: 'Quintessential', cursive;
+    text-shadow: 3px 2px 3px black ;
+    display: flex;
+    justify-content: center;
+}
+#frase {
+    font-family: 'Redressed', cursive;
+    text-align: center;
+}
+
+#texto_productos {
+    font-family: 'Redressed', cursive;
+    text-align: center;
+}
+.footer__cat {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer__cat__banner {
+    margin-left: 35px;
+    width: auto;
+    height: 70px;
+}  
+
+.list-final {
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px; 
+}
+
+.list-final li {
+    font-size: small;
+    margin-bottom: 15px;
+    margin-left: 25px; 
+}
+
+.cuerpo__banner {
+    /* logo posicionado flex*/
+    background-image: url(../multimedia/footer/yellow.jpg);
+    background-size: contain;
+    height: 100%;
+    color: black;
+    font-family: "IM Fell English SC", serif; 
+}
+    
+.cuerpo__banner ul {
+    list-style: none; 
+}
+
+.cuerpo__banner ul a {
+    font-weight: 600;
+    color: black;
+    text-decoration: none; 
+}
+
+.filtros_color {
+    margin-left: 600px;
+}
+
+.contenedor_productos {
+    
+    font-family: 'Redressed', cursive;
+    font-size: large;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+    grid-gap: 20px;  
+}
+.card-image {
+    background-image: url(../multimedia/productos/fondo2.jpeg);
+   background-size: cover; 
+}
+
+.card {
+   background-color: transparent !important ;  
+}
+
+.card:hover {
+     box-shadow:  0 0 20px #f0ad4e  ;
+}
+
+.productoEnCarrito{
+    margin-bottom: 20px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-contenedor {
+    position: fixed;
+    top: 0;
+    transition: all .5s;
+    opacity: 1;
+    visibility: hidden;
+    z-index: 3;
+}
+ #carritoCerrar {
+     border-radius: 30px;
+     background-color: transparent;
+     border: transparent;
+     transition: .3s ease all;
+	
+ }
+#carritoCerrar:hover {
+    transform: scale(1.3)
+}
+.modal-active {
+    opacity: 1;
+    visibility: visible;
+   
+}
+
+.modal-carrito {
+    position: relative;
+    background-color: black;
+    border-radius: 20px;
+    min-width: 500px;
+    margin-top: -50%;
+    transition: all .5s;  
+}
+
+.modal-active .modal-carrito {
+    margin-top: 0;
+}
+
+.modal-carrito h2 {
+    font-family: 'Quintessential', cursive;
+    text-shadow: 3px 2px 3px #f0ad4e ;
+   
+}
+
+#boton-carrito {
+    
+    border-radius: 30px;
+    border: transparent;
+}
+
+.radio {
+    background-color: transparent !important;
+    border: transparent !important;
+    
+    
+}
+
+.boton_agregar {
+    border-color: black;
+    border-radius: 30px;
+    background-color: grey;
+}
+
+.boton_agregar:hover {
+   
+    border-color: #ff7514;
+} 
+.carrusel {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .carrusel-items {
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 10px 10px 10px #f0ad4e; 
+  }
+  
+  .carrusel-item {
+    min-width: 200px;
+    max-width: 200px;
+    height: 150px;
+    outline: 10px solid black;
+    cursor: pointer;
+  }
+  
+  .carrusel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.contenedorCompra {
+    background: rgba(0,0,0,.4);
+    font-family: 'Quintessential', cursive;
+    text-shadow: 3px 2px 3px #f0ad4e ;
+    font-size: xx-large;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+    z-index: 4;
+	 visibility: hidden; 
+    
+}
+.contenedorCompra.active {
+	visibility: visible;
+}
+#contenedorTexto {
+    border: #f0ad4e 4px solid;
+    border-radius: 40px;
+}
+#botonCerrar {
+    font-size: large;
+    box-shadow:  3px 2px 3px #f0ad4e;
+}
+
+#finalizar-compra {
+    font-size: medium;
+    box-shadow:  3px 2px 3px #f0ad4e;
+    width: 33.33%;
+    
+}
+.nav {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    transition: .3s ease all;
+   
+}
+.link {
+    padding: 5px;
+    margin: 10px;
+    text-decoration: none;
+    box-shadow: none;
+    font-family: 'Quintessential', cursive;
+    font-size: large;
+}
+.link:hover{
+  font-weight: 600 ;
+}
+
+.form {
+    padding: 30px;
+    text-align: center;
+    font-family: 'Quintessential', cursive;
+    font-size: large;
+    display: grid;
+    justify-content: center;
+}
+.campo {
+    padding-left: 230px;
+    padding-top: 30px;
+    border-radius: 70px;
+}
+.noticiasMain {
+    display: flex;
+    justify-content: center;
+    color: #ffff00;
+    font-family: 'Redressed', cursive;
+    transition: .3s ;
+}
+.image:hover{
+    transform: rotateY(180deg);
+}
+.noticiasMain p {
+    margin-top: 200px;
+    text-shadow: 3px 2px 3px #f0ad4e ;
+}
+@media (min-width: 200px) and (max-width: 700px) {
+    .list-final {
+        display: block  !important;
+        margin-top: 90px;
+     }     
+    .contenedor_productos {
+    display: flex;
+    flex-direction: column;
+}
+#provincias {
+    text-align: center ;
+   
+   
+    
+
+}
+    .cuerpo__banner {
+    background-size: cover;
+} 
+    .portada  {
+    background-size: cover;
+}   
+    .footer__cat{
+    display: block  !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+
+.footer__cat__banner{
+    margin-top: 60px;
+    margin-left: 90px;
+} 
+.benito-store {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.productoEnCarrito {
+    flex-direction: column;
+    text-align: center;
+}
+.muestra {
+	width: 100%;
+	
+}
+.filtros_color {
+    margin-left: 130px !important;
+}
+.noticiasMain {
+    flex-direction: column;
+    text-align: center;
+}  
+}
+
+.swal-modal {
+    background: black;
+    border: 3px solid #f0ad4e;
+}
+.swal-title {
+    color: #f0ad4e;
+}
+.swal-text{
+    color: #f0ad4e;
+}
+.swal-button {
+    background-color: #f0ad4e;
+    color: black;  
+}
+.preguntas {
+    color: #f0ad4e;
+    text-align: center;
+}
+
+#provincias {
+    text-align: center;
+    margin-left: 500px;
+    width: 250px;
+    background-color: #f0ad4e;
+
+}
