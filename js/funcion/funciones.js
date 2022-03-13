@@ -4,7 +4,7 @@ const productos = document.getElementById("productos_vigentes");  //id de produc
 let carrito = []; //array carrito  - carrito vacio
 const valorFinal = document.getElementById("valorFinal"); // precio final que se ve 
 const contadorCarrito = document.getElementById('contadorCarrito'); // cuenta productos
-const url = "./data.json";
+const url = "./data/data.json";
 
 
 function mostrarCarrito(agregarProducto) {
