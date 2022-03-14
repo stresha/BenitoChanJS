@@ -1,4 +1,4 @@
-
+const url = "./product.json";
 fetch(url) //asincronico - Se llama al final de todo el codigo
 .then( (respuesta) => respuesta.json())
 .then( (productos) => {

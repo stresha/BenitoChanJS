@@ -15,7 +15,7 @@ formularioCompleto.innerHTML = `
               `
               formulario.appendChild(formularioCompleto)
 const provinciasData = []
-const direccion = "../data/provincias.json";
+const direccion = "./data/provincias.json";
 
 fetch(direccion)
   .then( (respuesta) => respuesta.json())
