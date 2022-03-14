@@ -39,7 +39,6 @@ function cargarProvinciasEnFormulario () {
     select.appendChild(option); 
   });
 }
-
 setTimeout( () => {
   cargarProvinciasEnFormulario();
 }, 100)
