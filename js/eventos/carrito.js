@@ -28,3 +28,4 @@ finalizarCompra.addEventListener('click', ()=>{
     carritoCerrar.click()
     vaciarCarrito();      
 })
+//final event

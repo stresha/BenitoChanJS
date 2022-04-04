@@ -5,5 +5,8 @@ fetch(url) //asincronico - Se llama al final de todo el codigo
     // console.log(productos)
     productos.forEach((producto) => {
         stockdisponibleActualizado.push(producto)
+    
+    
+    
     });
 })    
